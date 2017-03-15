@@ -17,4 +17,14 @@ contract MetaStruct {
 		bool hungry = users[addr].hungry;
 		return hungry;
 	}
+
+	function getUserName(address addr) returns(string) {
+	 	string name = users[addr].name;
+		return name;
+	}
+
+	function getUserAmount(address addr) returns(uint) {
+	 	uint amount = users[addr].amount;
+		return amount;
+	}
 }
